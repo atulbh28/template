@@ -19,7 +19,7 @@
         },
         "parameters": {
           "storageAccountName": {
-            "value": "teststorz1234aravind"
+            "value": "teststorz1234"
           },
           "location": {
             "value": "westus"
