@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         
-        
+
     },
     "functions": [],
     "resources": [
@@ -39,12 +39,12 @@
         "properties": {
             "publicIPAllocationMethod": "Dynamic",
             "dnsSettings": {
-                "domainNameLabel": "[toLower('mynewvm12')]"
+                "domainNameLabel": "[toLower('mynewvm555')]"
             }
         }
     },
     {
-        "name": "mynewvm-nsg12",
+        "name": "mynewvm-nsg7655",
         "type": "Microsoft.Network/networkSecurityGroups",
         "apiVersion": "2018-08-01",
         "location": "[resourceGroup().location]",
@@ -68,12 +68,12 @@
         }
     },
     {
-        "name": "mynewvm-VirtualNetwork12",
+        "name": "mynewvm-VirtualNetwork8766",
         "type": "Microsoft.Network/virtualNetworks",
         "apiVersion": "2019-11-01",
 		"location": "[resourceGroup().location]",
         "dependsOn": [
-            "[resourceId('Microsoft.Network/networkSecurityGroups', 'mynewvm-nsg12')]"
+            "[resourceId('Microsoft.Network/networkSecurityGroups', 'mynewvm-nsg7655')]"
         ],
         "tags": {
             "displayName": "mynewvm-VirtualNetwork"
